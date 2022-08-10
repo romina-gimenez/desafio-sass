@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*paleta de colores*/
 /*estilo de fuentes*/
 /*estilo footer*/
@@ -26,7 +27,60 @@ header .logo-mate {
 
 h1 {
   font-family: Cambria;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+/*modificación banner sección inicio*/
+.producto-carrousel {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+}
+
+.card .card__texto {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem, bolder, italic;
+}
+.card .card__imagen {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+}
+.whatsapp img {
+  width: 80px;
+  height: 80px;
+}
+
+/*EXTENDS*/
+.boton, .boton__cancelar, .boton__enviar, .boton_verMas {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+
+.boton_verMas {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.boton_verMas {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /*footer*/
@@ -44,6 +98,23 @@ footer .lista-cierre {
   display: flex;
   gap: 50px;
 }
+footer .lista-cierre a {
+  text-decoration: none;
+  color: black;
+}
+footer .card__footer {
+  width: 6px;
+}
+
+/*paleta de colores*/
+/*estilo de fuentes*/
+/*estilo footer*/
+h1 {
+  font-family: Cambria;
+  font-size: 2.5rem;
+}
+
+/*footer*/
 footer .card__img {
   width: 15px;
 }
@@ -55,6 +126,59 @@ form {
 h2 {
   color: black;
   font-family: Cambria;
+}
+
+.formulario {
+  margin-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.maps {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
+/*EXTENDS*/
+.boton, .boton__cancelar, .boton__enviar, .boton_verMas {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+
+.boton__enviar {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.boton__cancelar {
+  background-color: #E4E6C3;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*MIXIN*/
+.box {
+  height: 250px;
+  width: 360px;
+}
+
+/*MAP*/
+/*EACH+MAP*/
+.btn--facebook {
+  background-color: black;
+}
+
+.btn--instagram {
+  background-color: #899878;
+}
+
+.btn--e-mail {
+  background-color: #899878;
 }
 
 /*paleta de colores*/

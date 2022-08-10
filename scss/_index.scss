@@ -1,0 +1,119 @@
+@import "variables";
+
+* {
+    Margin:0;
+    padding:0;
+ }
+
+body{
+    background-color: $color-fondos;
+}
+
+header {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: $color-fondos;
+    
+    .logo-mate{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+h1{
+    font-family: $fuente-principal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-titulos;
+   
+}
+
+
+/*modificación banner sección inicio*/    
+.producto-carrousel{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+
+}
+
+.card{
+.card__texto{
+    font-family: $fuente-general;
+    font-size: $fuente-card-size;
+}
+
+.card__imagen{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/*EXTENDS*/
+.boton {
+	width:150px;
+	height:30px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:.5px solid black;
+}
+
+.boton_verMas{
+	@extend .boton;
+	background-color:#E4E6C3;
+	color:black;
+    font-family: $fuente-general;
+}
+
+.boton_verMas{
+	@extend .boton;
+	background-color:#E4E6C3;
+	color:black;
+    font-family: $fuente-general;
+}
+
+
+/*footer*/
+footer{
+    background-color: $color-footer;
+    margin-top: 10%;
+
+        p{
+            text-decoration: none;
+            color: $color-titulos;
+            font-family: $fuente-principal;
+        }
+        .lista-cierre{
+            list-style: none;
+            display: flex;  
+            gap: 50px;
+           
+            a{
+                text-decoration: none;
+                color: $color-titulos;
+            }
+        }
+        .card__footer{
+            width: 6px;
+        }
+
+}

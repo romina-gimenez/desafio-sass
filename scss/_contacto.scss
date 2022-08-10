@@ -1,28 +1,5 @@
 @import "variables";
 
-* {
-    Margin:0;
-    padding:0;
- }
-
-body{
-    background-color: $color-fondos;
-}
-
-header {
-    display: flex;
-    align-items: left;
-    justify-content: space-around;
-    position: sticky;
-    top:0;
-    z-index: 1;
-    background-color: $color-fondos;
-    .logo-mate{
-        width: 100px;
-        height: 100px;
-    }
-}
-
 h1{
 
     font-family: $fuente-principal;
@@ -31,18 +8,6 @@ h1{
 
 /*footer*/
 footer{
-    background-color: $color-footer;
-    margin-top: 10%;
-        p{
-            text-decoration: none;
-            color: $color-titulos;
-            font-family: $fuente-principal;
-        }
-        .lista-cierre{
-            list-style: none;
-            display: flex;  
-            gap: 50px;
-        }
         .card__img{
             width: 15px;
         }
@@ -50,11 +15,71 @@ footer{
 
 form{
     margin-top: 150px;
+
 }
-
-
 
 h2{
     color: $color-titulos;
     font-family: $fuente-principal;
+ 
 }
+
+.formulario{
+    margin-left: 20px;
+    font-family: $fuente-general;
+}
+.maps{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+/*EXTENDS*/
+.boton {
+	width:150px;
+	height:30px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:.5px solid black;
+}
+
+.boton__enviar{
+	@extend .boton;
+	background-color:#E4E6C3;
+	color:black;
+    font-family: $fuente-general;
+}
+
+.boton__cancelar{
+	@extend .boton;
+	background-color:#E4E6C3;
+	color:black;
+    font-family: $fuente-general;
+}
+
+/*MIXIN*/
+@mixin medida($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .box {
+    @include medida(360px, 250px);
+ }
+
+ /*MAP*/
+ $redSocial: ( 
+ facebook: black,
+ instagram:  #899878,
+ e-mail: #899878,
+); 
+
+/*EACH+MAP*/
+@each $red, $color in $redSocial {
+.btn--#{$red} {
+background-color: $color;
+}
+}
+
+
+
+ 
